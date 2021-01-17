@@ -40,20 +40,21 @@ sr.reveal('.animate-bottom',{
     delay: 600
 });
 
-function clickFunction() {
-    document.getElementById("dropDownTwo").classList.toggle("show");
+function clickButton() {
+    console.log("clicked");
+    document.getElementById("dropdownTwo").classList.toggle("show");
 }
 
 window.onclick = function(event) {
-    if (! event.target.matches("nav-link")) {
+    if (! event.target.matches(".nav-link")) {
         var dropdowns = document.getElementsByClassName("dropdown-content")
-    }
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
     }
 }
 
