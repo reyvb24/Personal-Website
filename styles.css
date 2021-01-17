@@ -269,7 +269,7 @@ header{
 
 .first-letter{
     text-transform: uppercase;
-    font-size: 6.3rem;
+    font-size: 9.3rem;
 }
 
 .headline{
@@ -393,14 +393,16 @@ header{
     background-color: var(--secondary-font-color);
 }
 
-/* What Is COVID-19 */
+/* About Me page */
 .global-headline{
     text-align: center;
     margin-top: 3.9rem;
 }
 
-#aboutMe .global-headline{
-    margin-top: 6.9rem;
+
+#aboutMe {
+    padding: 0 2vw;
+    margin-top: 20vh;
 }
 
 .global-headline .asterisk{
@@ -476,10 +478,29 @@ header{
     background-color: var(--main-font-color-dark);
 }
 
-/* Government Guidelines */
+/* Experiences */
 #experiences{
-    background: url("#") center no-repeat;
+    background: url("assets/experience.jpg") center no-repeat;
     background-size: cover; 
+    margin-top: 20vh;
+    padding: 0 2vh;
+}
+
+#experiences-sub-headline {
+    color:#ffffff;
+}
+
+#experiences #warning {
+    text-align: center;
+}
+
+#experiences p {
+    margin-top: 8vh;
+    text-align:justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+    margin-bottom: 2.4rem;
+    color:white;
 }
 
 .between{
