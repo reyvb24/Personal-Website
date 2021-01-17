@@ -40,3 +40,20 @@ sr.reveal('.animate-bottom',{
     delay: 600
 });
 
+function clickFunction() {
+    document.getElementById("dropDownTwo").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    if (! event.target.matches("nav-link")) {
+        var dropdowns = document.getElementsByClassName("dropdown-content")
+    }
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+}
+
