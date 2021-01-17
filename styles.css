@@ -173,7 +173,8 @@ header{
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 100%;
+    flex-direction: column;
+    min-width: 33%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -200,7 +201,10 @@ header{
 
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+.show {
+    display: flex;
+    flex-direction: row;
+}
 
 
 /*Hero*/
@@ -642,6 +646,19 @@ footer{
 
     .active{
         position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .show {
+        display: block;
     }
 
     .active::before{
