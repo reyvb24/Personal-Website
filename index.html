@@ -28,7 +28,7 @@
                         <a href="#experiences" class="nav-link">Experiences</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index2.html" class="nav-link">Projects</a>
+                        <a href="#projects" class="nav-link">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a href="index3.html" class="nav-link">My Artworks</a>
@@ -106,6 +106,10 @@
                         <h2>Gender : </h2>
                         <h2> Male </h2>
                         <br>
+                        <h2>Education : </h2>
+                        <li> The University of Hong Kong (BENG, Compsci) ~ 2019 - now </li>
+                        <li> SMAK5 Penabur Jakarta (Science stream) ~ 2016 - 2019</li>
+                        <br>
                         <h2>Height :</h2>
                         <h2>180cm</h2>
                         <br>
@@ -144,37 +148,112 @@
         </div>
     </section>
     <!-- Experiences ends -->
-    <section class="available-hospitals">
+
+    <!-- Experience-box -->
+    <section id="experience-box">
         <div class="container">
-           <div class="covid-info">
+           <div class="boxes">
                 <div class="image-group padding-right animate-left">
                     <img src="assets/red-bull(4).gif" alt="Gif not available">
                     <div class="image-text">
-                        <p>Year of affiliation : 2020 - now</p>
-                        <p>Role : Head of Marketing</p>
-                        <p>I have been a member of the exco group of this society for over half-a-year now. My tasks mostly revolve around managing the social media contents. (This GIF is the work I am most proud of)</p>
+                        <li>Year of affiliation : 2020 - now</li>
+                        <li>Role : Head of Marketing</li>
+                        <li>I have been a member of the exco group of this society for over half-a-year now. My tasks mostly revolve around managing the social media contents. (This GIF is the work I am most proud of)</li>
                     </div>
 
-                    <img src="#" alt="">
-                    <img src="#" alt="">
-                    <img src="#" alt="">
-                </div>
-                <div class="covid-description animate-right">
-                    <div class="global-headline">
-                        <h2 class="sub-headline1">
-                            <span class="first-letter">M</span>y
-                        </h2>
-                        <h1 class="headline headline-dark">Projects</h1>
-                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    <img src="assets/hku.jpeg" alt="Image not found">
+                    <div class="image-text">
+                        <li>Year of affiliation : 2020 - now</li>
+                        <li>Role : Student Ambasssador</li>
+                        <li>It is my task to be a goodwill ambassador for HKU, while also participating in their various admission events as a comittee/helper</li>
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nihil libero tempora similique id dolorum quos aspernatur at cupiditate vero voluptatibus debitis ducimus atque officiis, totam laudantium rem, voluptatem porro?
-                    </p>
-                    <a href="#" class="btn body-btn">View the full list</a>
+                    <img src="assets/algoritma.png" alt="Image not found">
+                    <div class="image-text">
+                        <li>Period of study and learning by doing data science projects : Nov 2020 - Jan 2021</li>
+                        <li>Role : Student</li>
+                        <li>I am satisfied with the teaching they provide as I am able to understand more about the field of data science, which I have been passionate about for so long.</li>
+                    </div>
                 </div>
-           </div> 
+            </div> 
         </div>
     </section>
+    <!-- Experience-box ends -->
+
+    <!-- projects -->
+    <section id = "projects">
+                <div class = "container">
+                    <div class="myProjects padding-right animate-left"></div>
+                        <div class="global-headline">
+                            <h2 class="sub-headline1">
+                                <span class="first-letter">M</span>y
+                            </h2>
+                            <h1 class="headline headline-dark">Projects</h1>
+                            <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                        </div>
+                    </div>
+                    <p>
+                        Here are some of the computer science-related projects which I have done in the past and are available in github. 
+                    </p>
+                    <a href="https://github.com/reyvb24" target ="blank" class="btn body-btn">View on github</a>
+                </div>
+
+    </section>
+    <!-- projects ends -->
+
+    <section id="project-box">
+        <div class="project-content container">
+            <div class="slideshow">
+                <div id = "slide1" class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                        
+                    <div class="text_two">
+                        <p>A project about automated email which I did for Algoritma's capstone project. My contributions were mostly refining the given code.</p>
+                    </div>
+                </div>
+
+                <div id = "slide2" class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <div class="text_two">
+                        Another one!
+                    </div>
+                </div>
+
+                <div id = "slide3" class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <div class="text_two">
+                        Our signature fudgy-brownies
+                    </div>
+                </div>
+                
+                <div id = "slide4" class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    
+                    <div class="text_two">A stopmotion video of our choux</div>
+                </div>
+                
+                <div id = "slide5" class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    
+                    <div class="text_two">A celebration video of our 1000th choux sold</div>
+                </div>
+
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>   
+            </div>
+        </div>
+    </section>
+           
     <!-- Available Hospitals ends -->
     <section class="the-impact-of-covid between">
         <div class="container">
@@ -191,30 +270,6 @@
         </div>
     </section>
     <!-- The Impact of Covid ends -->
-    <section class="coronavirus-cases">
-        <div class="container">
-            <div class="covid-info">
-                <div class="covid-description padding-right animate-left">
-                    <div class="global-headline">
-                        <h2 class="sub-headline1">
-                            <span class="first-letter">C</span>oronavirus
-                        </h2>
-                        <h1 class="headline headline-dark">cases</h1>
-                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
-                    </div>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci blanditiis quos dolores dignissimos officiis dolor dolorum! Voluptatibus reiciendis cupiditate itaque amet, fugit doloremque, dolore eligendi molestiae vel aut explicabo quae.
-                    </p>
-                    <a href="#" class="btn body-btn">clilck to see map</a>
-                </div>
-                <div class="image-group">
-                    <img class="animate-top" src="#" alt="">
-                    <img class="animate-bottom" src="#" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Coronavirus cases ends -->
     <footer>
         <div class="container">
             <div class="back-to-top">
