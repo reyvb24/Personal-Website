@@ -58,6 +58,17 @@ window.onclick = function(event) {
     }
 }
 
+function setActive(n) {
+    var navItem = document.getElementsByClassName("nav-item");
+    for (i = 0; i<navItem.length-1; i++) {
+        if (navItem[i].classList.contains("active")) {
+            navItem[i].classList.remove("active")
+        }
+    }
+    navItem[n].classList.toggle("active");
+}
+
+
 var slideIndex = 1;
 showSlides(slideIndex);
 

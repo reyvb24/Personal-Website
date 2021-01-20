@@ -194,12 +194,6 @@ header{
     color: var(--secondary-font-color)
 }
 
-/* Show the dropdown menu on hover
-.dropdown:hover .dropdown-content {
-    display: block;
-} */
-
-
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
     display: flex;
@@ -253,6 +247,7 @@ header{
     opacity: 0;
     animation: fadeUp .5s forwards;
     animation-delay: .5s; 
+    margin-bottom: 4vh;
 }
 
 .sub-headline1{
@@ -487,7 +482,7 @@ header{
     background: url("assets/experience.jpg") center no-repeat;
     background-size: cover; 
     margin-top: 20vh;
-    padding: 0 2vh;
+    padding: 0 2vw;
     display:flex;
     align-items: center;
     text-align: center;
@@ -563,7 +558,8 @@ header{
 
 /* start of my projects */
 #projects {
-    background-color:rgba(242, 255, 255, 0.781)
+    background-color:rgba(242, 255, 255, 0.781);
+    text-align: center;
 }
 
 .myProjects {
@@ -580,49 +576,72 @@ header{
 
 /* project-box section */
 #project-box {
+    padding: 0 2vw;
     position: relative;
-    display:flex;
     align-content:center;
     width:100%;
-    background-color:rgba(242, 255, 255, 0.781)
+    background-color:rgba(242, 255, 255, 0.781);
+    margin-bottom: 20vh;
 }
 
-#slide1  {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background: url("assets/Background.jpg");
-    background-position: cover;;
-}
 
 .project-content {
-    background-color: black;
+
+    display: flex;
     flex-direction: column;
     text-align: center;
     width: 100%;
     position: relative;
     height: 50vh;
     align-items:center;
-    justify-content: center;
 }
 
-.project-content .slideshow {
-  width: 100%;
-  position: relative;
+.mySlides img{
+    height:100%;
+    width: 100%;
+    max-width: 100%;
+    object-fit:cover;
+    display: block;
+    z-index: 0;
+    position: relative;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.mySlides:hover {
+    display: black;
+}
+.mySlides img:hover {
+    transform: scale(1.3);
+    opacity: .8;
+}
+
+#project-box .slideshow {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+
 }
 
 #project .mySlides {
-  display: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  padding: 16px;
+  vertical-align: middle;
+  top:45%;
+  display: table-cell;
+  padding: 0 1vw;
   color: white;
+  background-color: black;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 2.2rem;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -639,61 +658,78 @@ header{
 }
 
 .prev:hover, .next:hover {
-  background-color: black;
-  color:white;
+  color: var(--secondary-font-color);
 }
 
 .text_two {
   color: white;
   font-size: 1.2rem;
   position: absolute;
-  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   text-align: center;
   z-index:0;
   bottom: 0px;
 }
 
-
-.text_two::after {
-    background-color: black;
-    z-index:-1;
-    position: absolute;
-    content: "";
-    height: 100%;
-    width:100%;
-    opacity: .5;
-}
-
 .numbertext {
-  color: black;
+  color: rgb(247, 247, 247);
   font-size: 1.2rem;
   padding: 8px 12px;
   position: absolute;
-  top: 50px;
+}
+
+#dots-box {
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    flex-direction: row;
+    width: 60%;
+    margin: 2vh auto;
 }
 
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display:inline-flex;
-  transition: background-color 0.6s ease;
-  bottom:0px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    transition: background-color 0.6s ease;
 }
 
+.active, .dot:hover {
+    background-color: var(--random-font-color);
+  }
+
 .dot:hover {
-  background-color: #717171;
+    background-color: #717171;
 }
+
+
 /* end of project-box section */
 
 /* The Impact of Covid */
-.impact-of-covid{
-    background: url("#") center no-repeat;
+#artworks{
+    background: url("assets/spidey.JPG") center no-repeat;
     background-size: cover;
+}
+
+#artworks .headline{
+    color:rgb(248, 104, 128);
+}
+
+#artworks p{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#artworks a{
+    font-size: 2rem;
+    color:whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Footer */
@@ -838,6 +874,15 @@ footer{
         position: relative;
     }
 
+    .active::before{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(105, 156, 223);
+        left: 0;
+        bottom: -3px;
+    }
+
     .dropdown-content {
         display: none;
         position: absolute;
@@ -849,16 +894,6 @@ footer{
 
     .show {
         display: block;
-    }
-
-    .active::before{
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: #fff;
-        left: 0;
-        bottom: -3px;
     }
 
     .sub-headline{
@@ -907,8 +942,7 @@ footer{
         justify-content: space-between;
     }
     
-    .social-media,
-    .newsletter-form{
+    .social-media, .newsletter-form{
         width: 100%;
         max-width: 77.5rem;
         margin: 0 1rem;
@@ -917,12 +951,7 @@ footer{
     .social-icons i{
         opacity: 1;
     }
-
-    .newsletter-btn{
-        margin-left: 7.5rem;
-    }
 }
-
 /* Animations */
 
 @keyframes fadeUp{

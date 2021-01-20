@@ -22,7 +22,7 @@
                 <a href="index.html" class="logo"><img src="" alt=""></a>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#aboutMe" class="nav-link active">About Me</a>
+                        <a href="#aboutMe" class="nav-link">About Me</a>
                     </li>
                     <li class="nav-item">
                         <a href="#experiences" class="nav-link">Experiences</a>
@@ -31,7 +31,7 @@
                         <a href="#projects" class="nav-link">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index3.html" class="nav-link">My Artworks</a>
+                        <a href="#artworks" class="nav-link">My Artworks</a>
                     </li>
                     <li class="nav-item">
                         <div class="dropdown">
@@ -191,10 +191,10 @@
                             <div class="asterisk"><i class="fas fa-asterisk"></i></div>
                         </div>
                     </div>
-                    <p>
-                        Here are some of the computer science-related projects which I have done in the past and are available in github. 
+                    <p class="animate-right">
+                        Here are some of the computer science-related projects which I have done in the past and are available on github. 
                     </p>
-                    <a href="https://github.com/reyvb24" target ="blank" class="btn body-btn">View on github</a>
+                    <a href="https://github.com/reyvb24" target ="blank" class="btn body-btn animate-left">View all on github</a>
                 </div>
 
     </section>
@@ -202,39 +202,55 @@
 
     <section id="project-box">
         <div class="project-content container">
-            <div class="slideshow">
-                <div id = "slide1" class="mySlides fade">
+            <div class="slideshow animate-bottom">
+                <div class="mySlides fade">
                     <div class="numbertext">1 / 5</div>
-                        
+                    <a href="https://github.com/reyvb24/capstone_project" target="blank">
+                        <img src="assets/mail.png"  alt="Target not found">
+                    </a>
                     <div class="text_two">
                         <p>A project about automated email which I did for Algoritma's capstone project. My contributions were mostly refining the given code.</p>
                     </div>
                 </div>
 
-                <div id = "slide2" class="mySlides fade">
+                <div class="mySlides fade">
                     <div class="numbertext">2 / 5</div>
+                    <a href="assets/LBB3.html" target="blank">
+                        <img src="assets/LBB3.png" alt="Target not found">
+                    </a>
                     <div class="text_two">
-                        Another one!
+                        <p>A report which I did for Algoritma, about making a regression model of the data frame crime which was obtained from Kaggle. Made using R-markdown.</p>
                     </div>
                 </div>
 
-                <div id = "slide3" class="mySlides fade">
+                <div class="mySlides fade">
                     <div class="numbertext">3 / 5</div>
+                    <a href="https://reyvb24.github.io/BakebyCooala/" target="blank">
+                        <img src="assets/bake.png" alt="Target not found">
+                    </a>
                     <div class="text_two">
-                        Our signature fudgy-brownies
+                        <p>A static website which I made for my personal business which I started with my friend back in summer 2020. Made using html, css, and some basic javascript.</p>
                     </div>
                 </div>
                 
-                <div id = "slide4" class="mySlides fade">
+                <div class="mySlides fade">
                     <div class="numbertext">4 / 5</div>
-                    
-                    <div class="text_two">A stopmotion video of our choux</div>
+                    <a href="https://github.com/reyvb24/php_coursera" target="blank"></a>
+                        <img src="assets/rps.png" alt="Target not found">
+                    </a>
+                    <div class="text_two">
+                        <p>A dynamic website using php which I made for one of the assignments of a coursera course titled "web application for everybody" offered by the University of Michigan using their css template.</p>
+                    </div>
                 </div>
                 
-                <div id = "slide5" class="mySlides fade">
+                <div class="mySlides fade">
                     <div class="numbertext">5 / 5</div>
-                    
-                    <div class="text_two">A celebration video of our 1000th choux sold</div>
+                    <a href="https://github.com/juandavinlie/patungkuyy">
+                        <img src="assets/flutter.png" alt="Target not found">
+                    </a>
+                    <div class="text_two">
+                        <p>A project for Garuda hacks hackathon back in the summer of 2020 made using flutter. We created a prototype app to gather people who wants to buy a specific item so that they can buy it at a cheaper price directly from the producer. I contributed mainly on the front-end part.</p>
+                    </div>
                 </div>
 
               <!-- Next and previous buttons -->
@@ -242,20 +258,19 @@
               <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
             <br>
-
-            <!-- The dots/circles -->
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span>
-              <span class="dot" onclick="currentSlide(4)"></span>
-              <span class="dot" onclick="currentSlide(5)"></span>   
-            </div>
+        </div>
+        <!-- The dots/circles -->
+        <div id = "dots-box">
+            <div class="dot" onclick="currentSlide(1)"></div> 
+            <div class="dot" onclick="currentSlide(2)"></div> 
+            <div class="dot" onclick="currentSlide(3)"></div>
+            <div class="dot" onclick="currentSlide(4)"></div>
+            <div class="dot" onclick="currentSlide(5)"></div>   
         </div>
     </section>
            
     <!-- Available Hospitals ends -->
-    <section class="the-impact-of-covid between">
+    <section id="artworks">
         <div class="container">
             <div class="global-headline">
                 <div class="animate-top">
@@ -266,6 +281,9 @@
                 <div class="animate-bottom">
                     <h1 class="headline headline-dark">Artworks</h1>
                 </div>
+                <p>This section is still under maintenance. Sorry for the inconvenience caused.</p>
+                <p>If you'd like to visit my page on instagram, click the following link:</p>
+                <a href="https://www.instagram.com/illustreytions_/" target="blank">https://www.instagram.com/illustreytions_</a>
             </div>
         </div>
     </section>
@@ -277,38 +295,26 @@
             </div>
             <div class="footer-content">
                 <div class="footer-content-Get animate-top">
-                    <h4>Get Help</h4>
                     <div class="asterisk"><i class="fas fa-asterisk"></i></div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea in voluptas saepe doloribus natus, sapiente quos, illo molestiae, amet velit mollitia recusandae ratione totam libero sed deserunt dignissimos possimus eum.
+                        If you'd like to contact me further, you can choose one of the platforms available below for further enquiries. Thank you for visiting my page!
                     </p>
+                    <p>&reg Reynard Verill, 2021</p>
                 </div>
                 <div class="footer-content-divide r animate-bottom">
                     <div class="social-media"></div>
-                        <h4>Follow along</h4>
+                        <h4>contact me</h4>
                         <ul class="social-icons">
                             <li>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/reynard-verill-234685196/"><i class="fab fa-linkedin"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                <a href="https://www.facebook.com/reynard.verill"><i class="fab fa-facebook-square"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/user/NHSChoices"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.instagram.com/reynardverill24/"><i class="fab fa-instagram"></i></a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="newsletter-container animate-bottom">
-                        <h4>Newsletter</h4>
-                        <form action="" class="newsletter-form">
-                            <input type="text" class="newsletter-input" placeholder="Enter your email address...">
-                            <button class="newsletter-btn" type="submit">
-                                <i class="fas fa-envelope"></i>
-                            </button>
-                        </form>
                     </div>
                 </div>
             </div>
