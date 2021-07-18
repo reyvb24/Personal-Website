@@ -41,8 +41,7 @@ sr.reveal('.animate-bottom',{
 });
 
 function clickButton() {
-    console.log("clicked");
-    document.getElementById("dropdownTwo").classList.toggle("show");
+    document.getElementById("dropdownTwo").classList.toggle("show-custom");
 }
 
 window.onclick = function(event) {
